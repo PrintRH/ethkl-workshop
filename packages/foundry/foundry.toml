@@ -42,6 +42,4 @@ quote_style = "double"
 bracket_spacing = true
 int_types = "long"
 
-remappings = ["@api3/contracts/=lib/api3/contracts"]
-
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config

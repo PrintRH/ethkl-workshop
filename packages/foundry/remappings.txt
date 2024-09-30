@@ -1,2 +1,2 @@
 @openzeppelin/contracts/=lib/openzeppelin-contracts/contracts
-@api3/contracts/=lib/api3/contracts
+@api3/contracts/=lib/contracts/contracts

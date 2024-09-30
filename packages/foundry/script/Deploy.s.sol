@@ -2,6 +2,7 @@
 pragma solidity ^0.8.19;
 
 import "../contracts/YourContract.sol";
+import "../contracts/API3PriceFeed.sol";
 import "./DeployHelpers.s.sol";
 
 contract DeployScript is ScaffoldETHDeploy {
@@ -21,6 +22,11 @@ contract DeployScript is ScaffoldETHDeploy {
       string.concat(
         "YourContract deployed at: ", vm.toString(address(yourContract))
       )
+    );
+
+    API3PriceFeed api3PriceFeed = new API3PriceFeed();
+    console.logString(
+      string.concat("Oracle deployed at: ", vm.toString(address(api3PriceFeed)))
     );
 
     vm.stopBroadcast();
