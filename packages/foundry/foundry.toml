@@ -31,6 +31,7 @@ scroll = "https://rpc.scroll.io"
 [etherscan]
 polygonMumbai = { key = "${ETHERSCAN_API_KEY}" }
 sepolia = { key = "${ETHERSCAN_API_KEY}" }
+scrollSepolia = { key = "${ETHERSCAN_API_KEY}" }
 
 
 [fmt]
@@ -40,5 +41,7 @@ tab_width = 2
 quote_style = "double"
 bracket_spacing = true
 int_types = "long"
+
+remappings = ["@api3/contracts/=lib/api3/contracts"]
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
