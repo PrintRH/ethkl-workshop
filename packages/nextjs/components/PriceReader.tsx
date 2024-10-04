@@ -13,17 +13,12 @@ const PriceReader = () => {
     functionName: "readDataFeed",
   });
 
-  const asNumber = Number(price);
-  if (asNumber <= Number.MAX_SAFE_INTEGER && asNumber >= Number.MIN_SAFE_INTEGER) {
-    return String(price);
-  }
-
   const priceFeedData = price ? price[0] : null;
-  console.log("Price of USD/ETH: ", priceFeedData);
+  console.log("Price of USDC/USD: ", priceFeedData);
 
   return (
     <div>
-      <h2>USD/ETH Price:</h2>
+      <h2>USDC/USD Price:</h2>
       {isEther
         ? "$" + formatEther(priceFeedData ? priceFeedData : BigInt(0))
         : String(`${priceFeedData ? priceFeedData : BigInt(0)} wei`)}
